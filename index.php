@@ -3,6 +3,7 @@
 <?php include 'inc/navbar.php'; ?>
 
 <?php include 'inc/head_image.php'; ?>
+<?php include 'inc/pop_up.php'; ?>
 
 
 
@@ -18,7 +19,7 @@
                             <!-- list with photo -->
        <div class="col-lg-4">
             <img class="rounded-circle" src="img/male_icon.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>রিফাত মিয়া</h2>
+            <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2>রিফাত মিয়া</h2></a>
             <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
@@ -35,8 +36,6 @@
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
            <!-- end of list with photo -->
-
-
             <div class="col-6 col-lg-4">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>

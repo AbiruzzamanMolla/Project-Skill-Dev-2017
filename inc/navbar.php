@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md fixed-top navbar-custom">
-  <a class="navbar-brand" href="./index.php">মানবতার আত্নপ্রকাশ</a>
+  <a class="navbar-brand" href="./">মানবতার আত্নপ্রকাশ</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

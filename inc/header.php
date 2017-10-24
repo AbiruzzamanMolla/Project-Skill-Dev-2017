@@ -1,4 +1,4 @@
-<?php include 'db.php'; ?> 
+<?php include 'db.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,11 +13,19 @@
     <!-- Bootstrap core CSS -->
     <link href="style/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style/carousel.css" rel="stylesheet">
+    <link href="style/fa/css/font-awesome.css" rel="stylesheet">
+    <link href="style/fa/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="offcanvas.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/style/dist/js/bootstrap.min.js"></script>
     <script src="/style/dist/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+        </script>
     <style>
         .navbar-custom {
     background-color: #ff5500;
