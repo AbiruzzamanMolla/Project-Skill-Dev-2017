@@ -5,59 +5,137 @@ if(isset($_GET['id'])){
     $id = $_GET['id'];
 } else {$id = '1';}
 
-// switch($source){
-//     case 'edit_comment';
-//         include "includes/edit_comment.php";
-//         break;
-
-//     default:
-//         include "includes/view_all_comments.php";
-//         break;
-// }
 ?>
 <?php
 $query = "SELECT * FROM users WHERE id = '{$id}'";
 $select_users = mysqli_query($connection,$query);
 while($row = mysqli_fetch_assoc($select_users)){
-  $name = $row['user_name'];
-  $user_image = $row['user_image'];
-  $age = $row['dob'];
+  $user_contect_number = $row['user_contect_number'];
+  $user_bikas = $row['user_bikas'];
+  $user_name = $row['user_name'];
+  $father_name = $row['father_name'];
+  $mother_name = $row['mother_name'];
+  $dob = $row['dob'];
+  $nid = $row['nid'];
+  $dobn = $row['dobn'];
+  $user_type = $row['user_type'];
   $user_dis = $row['user_dis'];
-  $number = $row['user_contect_number'];
+  $gender = $row['gender'];
+  $village = $row['village'];
+  $upzilla = $row['upzilla'];
+  $zilla = $row['zilla'];
+  $union = $row['union'];
+  $post_office = $row['post_office'];
+  $post_code = $row['post_code'];
+  $pin_code = $row['pin_code'];
+  $o_name = $row['o_name'];
+  $o_nid = $row['o_nid'];
+  $o_num = $row['o_num'];
+  $m_num = $row['m_num'];
+  $chairman_number = $row['chairman_number'];
+  $user_image = $row['user_image'];
+  $user_video = $row['user_video'];
+  $chairman_cc = $row['chairman_cc'];
 
 ?>
-    <main role="main" class="container">
-
-    <div class="row row-offcanvas row-offcanvas-right">
-            <div class="col-12 col-md-9">
-              <p class="float-right d-md-none">
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
-              </p>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12 lead">নিজের পরিচয়<hr></div>
+          </div>
+          <div class="row">
+      <div class="col-md-4 text-center">
+              <img class="img-circle avatar avatar-original" style="-webkit-user-select:none; 
+              display:block; margin:auto;" src="img/<?php echo $user_image; ?>" height="120px" width="120px">
+            </div>
+            <div class="col-md-8">
               <div class="row">
-                                <!-- list with photo -->
-    <div class="col-sm-6">
-      <p><img src="img/<?php echo $user_image; ?>" alt="" height="500px" width="400px"></p>
+                <div class="col-md-12">
+                  <h1 class="only-bottom-margin"><?php echo $user_name;?></h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="text-muted">বাবার নাম:</span> <?php echo $father_name;?><br>
+                  <span class="text-muted">মায়ের নাম:</span> <?php echo $mother_name;?><br>
+                  <span class="text-muted">জন্ম তারিখ:</span> <?php echo $dob;?><br>
+                  <span class="text-muted">মোবাইল:</span> <?php echo $user_contect_number;?><br>
+                  <span class="text-muted">বিবরণ:</span><br><br>
+                  <small class="text-muted">: <?php echo $user_dis;?></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-6">
-      <p>
-      <b>নামঃ</b> <?php echo $name; ?><br>
-      <b>বয়সঃ</b> <?php echo $age; ?><br>
+  </div>
+</div>
 
-      <b>বর্ননাঃ </b> <?php echo $user_dis; ?><br>
-      <br><br>
-      <img src="img/dividing-line.png" alt=""><br><br>
-      <button type="" class="btn btn-info"><?php echo $number; ?></button>  
-      </p>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12 lead">অন্যান্য তথ্য<hr></div>
+          </div>
+          <div class="row">
+      <div class="col-md-4 text-center">
+              <a href="img/<?php echo $user_video;?>"><img class="img-circle avatar avatar-original" style="-webkit-user-select:none; 
+              display:block; margin:auto;" src="img/hbg1.jpg" height="120px" width="120px"></a>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="text-muted">অভিভাবকের নাম্বার:</span> <?php echo $o_num;?><br>
+                  <span class="text-muted">অভিভাবকের NID:</span> <?php echo $o_nid;?><br>
+                  <span class="text-muted">চেয়্যারম্যানের নাম্বার:</span> <?php echo $chairman_number;?><br>
+                  <span class="text-muted">গ্রাম প্রতিনিধির নাম্বার:</span> <?php echo $m_num;?><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <hr><a href="img/<?php echo $chairman_cc;?>"><button class="btn btn-default pull-right"><i class="glyphicon glyphicon-pencil"></i> চেয়্যারম্যান এর সার্টিফিকিট দেখুন</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-          </div><!--/row-->
-        </div><!--/span-->
+  </div>
+</div>
 
-     <?php include 'inc/sidebar.php'; ?>
-      </div><!--/row-->
-
-      <hr>
-
-    </main>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-md-12 lead">সাহার্য্য পাঠান<hr></div>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <span class="text-muted">বিকাশ</span> <?php echo $user_bikas;?><br>
+                  <span class="text-muted">রকেট</span><br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <?php 
 }
 ?> 

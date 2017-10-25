@@ -1,46 +1,43 @@
 <?php include 'inc/header.php'; ?>
 
 <?php include 'inc/navbar.php'; ?>
+<?php include 'inc/pop_up.php'; ?>
 
+<div class="container">
+    <div class="row">
+        <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+        $query = "SELECT * FROM users WHERE user_type = 'rugi' ORDER BY id DESC";
+        $select_users = mysqli_query($connection,$query);
+        while($row = mysqli_fetch_assoc($select_users)){
+          $id = $row['id'];
+          $name = $row['user_name'];
+          $user_image = $row['user_image'];
+          $dob = $row['dob'];
+          $user_dis = substr($row['user_dis'],0,70);
+        ?>
+            <tr>
+            <td align="left" width="20%"><img src="img/<?php echo $user_image; ?>" alt="" class="" hight="120px" width="120px">
+            </td>
+            <td align="left" width="80%">
+            <p>নামঃ <a href="info?id=<?php echo $id; ?>"><?php echo $name; ?></a><br>
+            জন্ম তারিখঃ <?php echo $dob; ?><br>
+            সাহায্যের কারনঃ <?php echo $user_dis; ?></p>
+            </td>
+            </tr>
+        <?php } ?>
+        </tbody>
+        </table>
+    </div>
+</div>
 
-    <main role="main" class="container">
-
-    <div class="row row-offcanvas row-offcanvas-right">
-    
-            <div class="col-12 col-md-9">
-              <p class="float-right d-md-none">
-                <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
-              </p>
-              <div class="row">
-                                <!-- list with photo -->
-           <div class="col-lg-4">
-                <img class="rounded-circle" src="img/u1.jpg" alt="Generic placeholder image" width="140" height="140">
-                <h2>রকিবা আক্তার</h2>
-                <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img class="rounded-circle" src="img/female_icon.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>নাম দুই</h2>
-                <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-              <div class="col-lg-4">
-                <img class="rounded-circle" src="img/mf_icon.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>নাম তিন</h2>
-                <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-              </div><!-- /.col-lg-4 -->
-           <!-- end of list with photo -->
-          </div><!--/row-->
-        </div><!--/span-->
-
-     <?php include 'inc/sidebar.php'; ?>
-      </div><!--/row-->
-
-      <hr>
-
-    </main><!--/.container-->
 
    <?php include 'inc/footer.php'; ?>
 

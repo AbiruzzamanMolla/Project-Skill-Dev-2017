@@ -164,12 +164,17 @@ margin-left: 10px;
             <span class="input-group-addon">
             <i class="glyphicon glyphicon-phone"></i>
             </span>
-              <input id="user_bikas" maxlength="10" name="user_bikas" placeholder="xxxxxxxxxxxx" class="form-control input-md ac_mobile" type="number" value={{mobile}} >
+              <input id="user_bikas" maxlength="10" name="user_bikas" placeholder="xxxxxxxxxxxx" class="form-control input-md ac_mobile" type="number">
+            </div>
+        </div> <label class="col-md-1 control-label" for="sms">রকেট নাম্বার</label>
+            <div class="col-md-3">
+        <div class="input-group">
+            <span class="input-group-addon">
+            <i class="glyphicon glyphicon-phone"></i>
+            </span>
+              <input id="user_bikas" maxlength="10" name="user_roket" placeholder="xxxxxxxxxxxx" class="form-control input-md ac_mobile" type="number">
             </div>
         </div>
-            <div class="col-md-1">
-              <a id="add_mobile" onclick=add_mobile()><i class="glyphicon glyphicon-plus"></i></a>
-            </div>
           </div>
           <div class="row form-group">
             <div class="col-md-8" id="mobile_numbers"></div>
@@ -238,8 +243,10 @@ margin-left: 10px;
           <div class="row form-group">
             <label class="col-md-2 control-label" for="farmer_type">সাহায্যের ধরণ</label>
             <div class="col-md-4">
-              <label class="radio-inline"><input type="radio" name="user_type" value="Farmer" checked>মেধাবী শিক্ষাথী</label>
-              <label class="radio-inline"><input type="radio" name="user_type" value="Politician">হতদরিদ্র</label>
+              <label class="radio-inline"><input type="radio" name="user_type" value="student" checked>মেধাবী শিক্ষাথী</label>
+              <label class="radio-inline"><input type="radio" name="user_type" value="rugi">অসহায় রোগী</label>
+              <label class="radio-inline"><input type="radio" name="user_type" value="atim">এতিমখানা</label>
+              <label class="radio-inline"><input type="radio" name="user_type" value="old">বৃদ্ধাশ্রম</label>
             </div>
 
             <label class="col-md-1 control-label" for="description">নিজের বর্ননা</label>
@@ -255,8 +262,8 @@ margin-left: 10px;
             <label class="col-md-3 control-label" for="smartphone">লিঙ্গ</label>
             <div class="col-md-3">
         
-                <label class="radio-inline"><input type="radio" name="gender" value=true>পুরুষ</label>
-                <label class="radio-inline"><input type="radio" name="gender" value=false>মহিলা</label>
+                <label class="radio-inline"><input type="radio" name="gender" value="male">পুরুষ</label>
+                <label class="radio-inline"><input type="radio" name="gender" value="female">মহিলা</label>
               </select>
             </div>
           </div>
@@ -420,9 +427,7 @@ margin-left: 10px;
 
           <div class="form-group row">
             <div class="col-md-8 text-center">
-            <center><input type="submit" name="submit" id="btn btn-login" class="btn btn-custom btn-lg btn-block" value="Register"></center>
-              <!-- <button id="save" name="save" class="btn btn-large btn-success"> Save Farmer Information</button>
-              <button class="btn btn-large btn-danger" type="button" onclick=history.go(-1)> Cancel </button> -->
+            <center><input type="submit" name="submit" id="btn btn-login" class="btn btn-success btn-lg btn-block" value="Register"></center>
             </div>
           </div>
           </fieldset>

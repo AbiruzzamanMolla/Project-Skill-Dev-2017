@@ -10,9 +10,9 @@
             <img class="first-slide" src="img/la.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1>text 1</h1>
+                <!-- <h1>text 1</h1>
                 <p>dis 1</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
               </div>
             </div>
           </div>
@@ -20,9 +20,9 @@
             <img class="second-slide" src="img/ny.jpg" alt="Second slide">
             <div class="container">
               <div class="carousel-caption">
-                <h1>text 1.</h1>
+                <!-- <h1>text 1.</h1>
                 <p>dis 2</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
               </div>
             </div>
           </div>
@@ -30,9 +30,9 @@
             <img class="third-slide" src="img/chicago.jpg" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-right">
-                <h1>twxt 3</h1>
+                <!-- <h1>twxt 3</h1>
                 <p>dis 3</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
               </div>
             </div>
           </div>

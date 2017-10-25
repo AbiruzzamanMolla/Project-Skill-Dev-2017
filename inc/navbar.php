@@ -11,17 +11,17 @@
          <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="poor_students.php">গরীব শিক্ষার্থী
+        <a class="nav-link" href="poor_students">গরীব শিক্ষার্থী
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="helpless.php">অসহায় রোগী</a>
+        <a class="nav-link disabled" href="helpless">অসহায় রোগী</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ফান্ড</a>
         <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">এতিমখানা</a>
-          <a class="dropdown-item" href="#">বৃদ্ধাশ্রম</a>
+          <a class="dropdown-item" href="atim">এতিমখানা</a>
+          <a class="dropdown-item" href="old">বৃদ্ধাশ্রম</a>
         </div>
       </li>
       <li class="nav-item">
