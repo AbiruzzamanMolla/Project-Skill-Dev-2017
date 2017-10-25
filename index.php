@@ -5,8 +5,6 @@
 <?php include 'inc/head_image.php'; ?>
 <?php include 'inc/pop_up.php'; ?>
 
-
-
     <main role="main" class="container">
 
       <div class="row row-offcanvas row-offcanvas-right">
@@ -16,59 +14,28 @@
             <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="row">
-                            <!-- list with photo -->
-       <div class="col-lg-4">
-            <img class="rounded-circle" src="img/male_icon.png" alt="Generic placeholder image" width="140" height="140">
-            <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2>রিফাত মিয়া</h2></a>
-            <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/female_icon.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>নাম দুই</h2>
-            <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/mf_icon.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>নাম তিন</h2>
-            <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <?php
+        $query = "SELECT * FROM users ORDER BY id DESC LIMIT 0,3";
+        $select_users = mysqli_query($connection,$query);
+        while($row = mysqli_fetch_assoc($select_users)){
+          $id = $row['id'];
+          $name = $row['user_name'];
+          $user_image = $row['user_image'];
+          $user_dis = substr($row['user_dis'],0,70);
+
+        ?>
+<!-- list with photo -->
+<div class="col-lg-4">
+            <img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
+            <a href="info?id=<?php echo $id; ?>" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2><?php echo $name; ?></h2></a>
+            <p><?php echo $user_dis; ?></p>
+            <p><a class="btn btn-secondary" href="info?id=1" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
            <!-- end of list with photo -->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="col-6 col-lg-4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
+         <?php }
+      ?>
+</div><!--/row-->
         </div><!--/span-->
-
      <?php include 'inc/sidebar.php'; ?>
       </div><!--/row-->
 

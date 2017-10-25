@@ -10,6 +10,9 @@ foreach($db as $key => $value){
     define(strtoupper($key),$value);
 }
 
-$connection = mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+$connection = mysqli_connect(DB_HOST,DB_USER,DB_PASS) or die(mysqli_error());
+mysqli_select_db($connection, DB_NAME);
+mysqli_query($connection,'SET CHARACTER SET utf8'); 
+mysqli_query($connection,"SET SESSION collation_connection ='utf8_general_ci'");
 
 ?>

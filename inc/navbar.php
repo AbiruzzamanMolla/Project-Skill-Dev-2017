@@ -25,7 +25,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">বিজ্ঞপ্তি</a>
+        <a class="nav-link" href="notice/html/index.html">বিজ্ঞপ্তি</a>
       </li>
     </ul>
       <a class="text-right pull-right" href="reg.php"><button class="pull-right form-inline my-2 my-lg-0 btn btn-outline-success my-2 my-sm-0" type="submit">আবেদন করুন</button></a>

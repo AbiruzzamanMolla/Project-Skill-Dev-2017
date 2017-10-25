@@ -14,8 +14,8 @@
               <div class="row">
                                 <!-- list with photo -->
            <div class="col-lg-4">
-                <img class="rounded-circle" src="img/male_icon.png" alt="Generic placeholder image" width="140" height="140">
-                <h2>রিফাত মিয়া</h2>
+                <img class="rounded-circle" src="img/u1.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>রকিবা আক্তার</h2>
                 <p>রিফাত মিয়া একজন এমন এমন জা তা লেখতে পারলেই হল , আমার এখন টাইম নাই</p>
                 <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
               </div><!-- /.col-lg-4 -->
