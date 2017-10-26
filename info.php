@@ -87,8 +87,31 @@ while($row = mysqli_fetch_assoc($select_users)){
           </div>
           <div class="row">
       <div class="col-md-4 text-center">
-              <a href="img/<?php echo $user_video;?>"><img class="img-circle avatar avatar-original" style="-webkit-user-select:none; 
-              display:block; margin:auto;" src="img/hbg1.jpg" height="120px" width="120px"></a>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header bg-success">
+      <h5 class="modal-title" id="exampleModalLabel">Playing Video</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    <video width="320" height="240" controls>
+  <source src="img/<?php echo $user_video; ?>" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+              <a href="img/<?php echo $user_video;?>" data-toggle="modal" data-target="#myModal"><img class="img-circle avatar avatar-original" style="-webkit-user-select:none; 
+              display:block; margin:auto;" src="img/images.png" height="120px" width="120px"></a>
             </div>
             <div class="col-md-8">
               <div class="row">
@@ -125,8 +148,9 @@ while($row = mysqli_fetch_assoc($select_users)){
             <div class="col-md-8">
               <div class="row">
                 <div class="col-md-6">
-                  <span class="text-muted">বিকাশ</span> <?php echo $user_bikas;?><br>
-                  <span class="text-muted">রকেট</span><br>
+                <table>
+                <tr><td><img src="img/bikas.png" alt=""></td><td>--------</td><td><img src="img/roktet.png" alt=""></td></tr>
+                <tr><td align="center"><b style="color:red;"><?php echo $user_bikas;?></b></td><td></td></tr></table>
                 </div>
               </div>
             </div>

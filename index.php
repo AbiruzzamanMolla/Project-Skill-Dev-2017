@@ -26,12 +26,12 @@
           $user_dis = substr($row['user_dis'],0,70);
         ?>
 <!-- list with photo -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
-            <a href="info?id=<?php echo $id; ?>" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2><?php echo $name; ?></h2></a>
-            <p><?php echo $user_dis; ?></p>
-            <p><a class="btn btn-secondary" href="info?id=1" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
+<div class="col-lg-4">
+<img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
+<h2 style="color:blue;"><?php echo $name; ?></h2>
+<p><?php echo $user_dis; ?></p>
+<p><a class="btn btn-secondary" href="info?id=<?php echo $id; ?>" role="button">বিবরণ দেখুন &raquo;</a></p>
+</div><!-- /.col-lg-4 -->
            <!-- end of list with photo -->
          <?php }
       ?>
@@ -48,12 +48,12 @@
           $user_dis = substr($row['user_dis'],0,70);
         ?>
 <!-- list with photo -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
-            <a href="info?id=<?php echo $id; ?>" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2><?php echo $name; ?></h2></a>
-            <p><?php echo $user_dis; ?></p>
-            <p><a class="btn btn-secondary" href="info?id=1" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
+<div class="col-lg-4">
+<img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
+<h2 style="color:blue;"><?php echo $name; ?></h2>
+<p><?php echo $user_dis; ?></p>
+<p><a class="btn btn-secondary" href="info?id=<?php echo $id; ?>" role="button">বিবরণ দেখুন &raquo;</a></p>
+</div><!-- /.col-lg-4 -->
            <!-- end of list with photo -->
          <?php }
       ?>
@@ -69,12 +69,12 @@
           $user_dis = substr($row['user_dis'],0,70);
         ?>
 <!-- list with photo -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
-            <a href="info?id=<?php echo $id; ?>" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2><?php echo $name; ?></h2></a>
-            <p><?php echo $user_dis; ?></p>
-            <p><a class="btn btn-secondary" href="info?id=1" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
+<div class="col-lg-4">
+<img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
+<h2 style="color:blue;"><?php echo $name; ?></h2>
+<p><?php echo $user_dis; ?></p>
+<p><a class="btn btn-secondary" href="info?id=<?php echo $id; ?>" role="button">বিবরণ দেখুন &raquo;</a></p>
+</div><!-- /.col-lg-4 -->
            <!-- end of list with photo -->
          <?php }
       ?>
@@ -93,9 +93,9 @@
 <!-- list with photo -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="img/<?php echo $user_image; ?>" alt="Generic placeholder image" width="140" height="140">
-            <a href="info?id=<?php echo $id; ?>" data-toggle="tooltip" data-placement="right" title="Hooray!"><h2><?php echo $name; ?></h2></a>
+            <h2 style="color:blue;"><?php echo $name; ?></h2>
             <p><?php echo $user_dis; ?></p>
-            <p><a class="btn btn-secondary" href="info?id=1" role="button">View details &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="info?id=<?php echo $id; ?>" role="button">বিবরণ দেখুন &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
            <!-- end of list with photo -->
          <?php }

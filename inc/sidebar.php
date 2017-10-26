@@ -5,8 +5,8 @@
 				<div class="col-lg-6">
 					<ul class="list-group">
           <li><a href="">কি করে আবেদন করবেন?</a></li>
-					<li>><a href="">টাকা পাঠানোর নিয়ম?</a></li>
-					<li>><a href="">তথ্য যাচাই করণ?</a></li>
+					<li><a href="">টাকা পাঠানোর নিয়ম?</a></li>
+					<li><a href="">তথ্য যাচাই করণ?</a></li>
 					</ul>
 				</div>
 				<!-- /.col-lg-6 -->
